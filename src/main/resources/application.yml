@@ -1,0 +1,11 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: discoveryservice    # MSA를 담당하는 스프링 클라우드에서 MSA 서비스에 고유한 이름을 부여해야하는데 이름을 부여.
+
+eureka:
+  client:
+    register-with-eureka: false # 유레카 서비스는 기동하되, 자신의 정보를 등록하는 작업을 하지 않겠다.
+    fetch-registry: false       # 유레카 서비스는 기동하되, 자신의 정보를 등록하는 작업을 하지 않겠다.
